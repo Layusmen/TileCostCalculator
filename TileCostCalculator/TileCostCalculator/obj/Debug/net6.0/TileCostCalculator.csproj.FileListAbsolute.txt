@@ -1,0 +1,15 @@
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\bin\Debug\net6.0\TileCostCalculator.exe
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\bin\Debug\net6.0\TileCostCalculator.deps.json
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\bin\Debug\net6.0\TileCostCalculator.runtimeconfig.json
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\bin\Debug\net6.0\TileCostCalculator.dll
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\bin\Debug\net6.0\TileCostCalculator.pdb
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.csproj.AssemblyReference.cache
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.AssemblyInfoInputs.cache
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.AssemblyInfo.cs
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.csproj.CoreCompileInputs.cache
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.dll
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\refint\TileCostCalculator.dll
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.pdb
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\TileCostCalculator.genruntimeconfig.cache
+C:\Users\ola\source\repos\TileCostCalculator\TileCostCalculator\obj\Debug\net6.0\ref\TileCostCalculator.dll

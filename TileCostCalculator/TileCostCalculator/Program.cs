@@ -77,7 +77,9 @@ namespace TileCostCalculator
 
             //since work done on 20 square feet is 
             //#86/hr. Then:
+
             double labourCost;
+            
             labourCost = area * workDone;
             Console.WriteLine("The labor cost is: $" + labourCost);
         }

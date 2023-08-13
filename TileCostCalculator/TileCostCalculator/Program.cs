@@ -1,4 +1,5 @@
 using System;
+using System.Drawing;
 
 
 namespace TileCostCalculator
@@ -9,8 +10,10 @@ namespace TileCostCalculator
         {
             // Supply the shape of the room
             Console.WriteLine("Please select whether the shape of the room. For rectangular, enter r. For Triangle enter t.");
-            string shapeOfRoom = Console.ReadLine().ToUpper();
+            string shapeofRoom = Console.ReadLine();
 
+            // Convert ShapeofRoom to Uppercase
+            string newShape = shapeofRoom.ToUpper();
 
 
             // Supply the Cost/unit of Tile
@@ -19,10 +22,9 @@ namespace TileCostCalculator
 
             // Supply the size of each unit of tiles in square feet
             Console.WriteLine("Size of each unit of tiles in square feet : ");
-            double sizeOfTile = Convert.ToDouble(Console.ReadLine());
+            double sizeofTile = Convert.ToDouble(Console.ReadLine());
 
-
-
+            double tilesNeeded;
             double area = 0;
 
             // Calculating the Area to floor 
@@ -71,15 +73,10 @@ namespace TileCostCalculator
             total = tilesNeeded * costOfTile;
             Console.WriteLine("The Total Cost is: $" + total + ".");
 
-
-            // since 20 Square Feet is done every hour at the rate of $86/hr. Then:
-            //i Sqaure Feet is done at 86/hr divide 20. 
-            double squareFeetPerHour = 0;
-            double givenFeet = 20;
-            double rateperHour = 86;
-            squareFeetPerHour = rateperHour / givenFeet;
-            double labourCost;
-            labourCost = area * squareFeetPerHour;
+            //since work done on 20 square feet is 
+            //#86/hr. Then:
+            double workdone = 86 / 20;
+            labourCost = area * workdone;
             Console.WriteLine("The labor cost is: $" + labourCost);
         }
 

@@ -1,4 +1,5 @@
-using System;
+﻿using System;
+
 
 namespace TileCostCalculator
 {
@@ -8,42 +9,40 @@ namespace TileCostCalculator
         {
             // Supply the shape of the room
             Console.WriteLine("Please select whether the shape of the room. For rectangular, enter r. For Triangle enter t.");
-            string shapeofRoom = Console.ReadLine();
+            string shapeOfRoom = Console.ReadLine().ToUpper();
 
-            // Convert ShapeofRoom to Uppercase
-            string newShape = shapeofRoom.ToUpper();
+
 
             // Supply the Cost/unit of Tile
             Console.WriteLine("Please Supply the Cost of Tile/Square Feet in $ : ");
-            double costofTile = Convert.ToDouble(Console.ReadLine());
+            double costOfTile = Convert.ToDouble(Console.ReadLine());
 
             // Supply the size of each unit of tiles in square feet
             Console.WriteLine("Size of each unit of tiles in square feet : ");
-            double sizeofTile = Convert.ToDouble(Console.ReadLine());
+            double sizeOfTile = Convert.ToDouble(Console.ReadLine());
 
-            double tilesNeeded;
+
+
             double area = 0;
-            double total;
-            double labourCost;
 
             // Calculating the Area to floor 
-            if (newShape == "R")
+            if (shapeOfRoom == "R")
 
             {
                 //Supply the lenght
                 Console.WriteLine("Good day. Please Supply the flooring Length in feet");
-                double lengthofRoom = Convert.ToDouble(Console.ReadLine());
+                double lengthOfRoom = Convert.ToDouble(Console.ReadLine());
 
                 // Supply the Width
                 Console.WriteLine("Please Supply the flooring width in feet");
-                double widthofRoom = Convert.ToDouble(Console.ReadLine());
+                double widthOfRoom = Convert.ToDouble(Console.ReadLine());
 
                 // Calculating the Area to floor 
-                area = lengthofRoom * widthofRoom;
+                area = lengthOfRoom * widthOfRoom;
                 Console.WriteLine("Area of Rectangle is: " + area);
 
             }
-            else if (newShape == "T")
+            else if (shapeOfRoom == "T")
             {
                 //Supply the bas
                 Console.WriteLine("Enter the base of triangle:");
@@ -63,19 +62,27 @@ namespace TileCostCalculator
             }
 
             // Tiles needed 
-            tilesNeeded = (int)Math.Ceiling(area / sizeofTile); // Rounded up
+            double tilesNeeded;
+            tilesNeeded = (int)Math.Ceiling(area / sizeOfTile); // Rounded up
             Console.WriteLine("The total tiles needed is: " + tilesNeeded + ".");
 
             // Calculating the Total Cost
-            total = tilesNeeded * costofTile;
+            double total;
+            total = tilesNeeded * costOfTile;
             Console.WriteLine("The Total Cost is: $" + total + ".");
 
-            //since work done on 20 square feet is 
-            //#86/hr. Then:
-            double workdone = 86 / 20;
-            labourCost = area * workdone;
+
+            // since 20 Square Feet is done every hour at the rate of $86/hr. Then:
+            //i Sqaure Feet is done at 86/hr divide 20. 
+            double squareFeetPerHour = 0;
+            double givenFeet = 20;
+            double rateperHour = 86;
+            squareFeetPerHour = rateperHour / givenFeet;
+            double labourCost;
+            labourCost = area * squareFeetPerHour;
             Console.WriteLine("The labor cost is: $" + labourCost);
         }
 
     }
 }
+

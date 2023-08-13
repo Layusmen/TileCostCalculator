@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileCostCalculator", "TileCostCalculator\TileCostCalculator.csproj", "{D741E822-5FAA-4C10-B7D3-43741A427934}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TileCostCalculator", "TileCostCalculator\TileCostCalculator.csproj", "{C84A0A68-567A-45DA-A6E8-D73A9BB1BCB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D741E822-5FAA-4C10-B7D3-43741A427934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D741E822-5FAA-4C10-B7D3-43741A427934}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D741E822-5FAA-4C10-B7D3-43741A427934}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D741E822-5FAA-4C10-B7D3-43741A427934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C84A0A68-567A-45DA-A6E8-D73A9BB1BCB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C84A0A68-567A-45DA-A6E8-D73A9BB1BCB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C84A0A68-567A-45DA-A6E8-D73A9BB1BCB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C84A0A68-567A-45DA-A6E8-D73A9BB1BCB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D673CCC8-D576-4834-B414-2528AF45D1D3}
+		SolutionGuid = {69253E4D-79DC-4CB9-B7FC-6EEE65B616FD}
 	EndGlobalSection
 EndGlobal

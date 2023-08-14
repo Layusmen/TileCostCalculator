@@ -62,27 +62,22 @@ namespace TileCostCalculator
             }
 
             // Tiles needed 
-            double tilesNeeded;
-            tilesNeeded = (int)Math.Ceiling(area / sizeOfTile); // Rounded up
+            double tilesNeeded = (int)Math.Ceiling(area / sizeOfTile); // Rounded up
             Console.WriteLine("The total tiles needed is: " + tilesNeeded + ".");
 
             // Calculating the Total Cost
-            double total;
-            total = tilesNeeded * costOfTile;
+            double total = tilesNeeded * costOfTile;
             Console.WriteLine("The Total Cost is: $" + total + ".");
 
 
             // since 20 Square Feet is done every hour at the rate of $86/hr. Then:
-            //i Sqaure Feet is done at 86/hr divide 20. 
-            double squareFeetPerHour = 0;
+            //1 Sqaure Feet is done at 86/hr divide 20. 
             double givenFeet = 20;
             double rateperHour = 86;
-            squareFeetPerHour = rateperHour / givenFeet;
-            double labourCost;
-            labourCost = area * squareFeetPerHour;
+            double squareFeetPerHour = rateperHour / givenFeet;
+            double labourCost = area * squareFeetPerHour;
             Console.WriteLine("The labor cost is: $" + labourCost);
         }
 
     }
 }
-

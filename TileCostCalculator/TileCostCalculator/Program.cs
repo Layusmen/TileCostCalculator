@@ -12,7 +12,7 @@ namespace TileCostCalculator
             Console.WriteLine("Please Supply the Cost of Tile/Square Feet in $ : ");
             double costOfTile = Convert.ToDouble(Console.ReadLine());
 
-            // Supply the size of each unit of tiles in square feet.
+            // Supply the size of each unit of tiles in square feet
             Console.WriteLine("Size of each unit of tiles in square feet : ");
             double sizeOfTile = Convert.ToDouble(Console.ReadLine());
             double area = 0;
@@ -54,7 +54,7 @@ namespace TileCostCalculator
             double total = tilesNeeded * costOfTile;
             Console.WriteLine("The Total Cost is: $" + total + ".");
             // since 20 Square Feet is done every hour at the rate of $86/hr. Then:
-            //1 Sqaure Feet is done at 86/hr divide 20. 
+            /+/1 Sqaure Feet is done at 86/hr divide 20. 
             double givenFeet = 20;
             double rateperHour = 86;
             double squareFeetPerHour = rateperHour / givenFeet;

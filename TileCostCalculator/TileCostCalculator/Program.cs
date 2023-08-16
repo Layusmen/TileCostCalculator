@@ -7,10 +7,23 @@ namespace TileCostCalculator
         {
             const double GIVENFEET = 20;
             const double RATEPERHOUR = 86;
+            string shapeOfRoom;
 
-            //Supply the shape of the room
-            Console.WriteLine("Please select whether the shape of the room. For rectangular, enter r. For Triangle enter t.");
-            string shapeOfRoom = Console.ReadLine().ToUpper();
+            while (true)
+            {
+                //Supply the shape of the room
+                Console.WriteLine("Please select whether the shape of the room. For rectangular, enter r. For Triangle enter t.");
+                shapeOfRoom = Console.ReadLine().ToUpper();
+
+                if (shapeOfRoom == "R" || shapeOfRoom == "T")
+                {
+                    break; // Loop exited once code input is valid.
+                }
+                else
+                {
+                    Console.WriteLine("Invalid shape input. Enter 'r' for rectangular or 't' for triangle.");
+                }
+            }
 
             //Supply the Cost/unit of Tile
             Console.WriteLine("Please Supply the Cost of Tile/Square Feet in $ : ");
@@ -21,39 +34,42 @@ namespace TileCostCalculator
             double sizeOfTile = Convert.ToDouble(Console.ReadLine());
             double area = 0;
 
-            //Calculate the Area to floor 
-            if (shapeOfRoom == "R")
             {
-                //Supply the lenght
-                Console.WriteLine("Good day. Please Supply the flooring Length in feet");
-                double lengthOfRoom = Convert.ToDouble(Console.ReadLine());
-
-                //Supply the Width
-                Console.WriteLine("Please Supply the flooring width in feet");
-                double widthOfRoom = Convert.ToDouble(Console.ReadLine());
-
                 //Calculate the Area to floor 
-                area = lengthOfRoom * widthOfRoom;
-                Console.WriteLine("Area of Rectangle is: " + area);
-            }
-            else if (shapeOfRoom == "T")
-            {
-                //Supply the bas
-                Console.WriteLine("Enter the base of triangle:");
-                double triangleBase = Convert.ToDouble(Console.ReadLine());
+                if (shapeOfRoom == "R")
+                {
+                    //Supply the lenght
+                    Console.WriteLine("Good day. Please Supply the flooring Length in feet");
+                    double lengthOfRoom = Convert.ToDouble(Console.ReadLine());
 
-                //Supply the height
-                Console.WriteLine("Enter the height of triangle:");
-                double triangleHeight = Convert.ToDouble(Console.ReadLine());
+                    //Supply the Width
+                    Console.WriteLine("Please Supply the flooring width in feet");
+                    double widthOfRoom = Convert.ToDouble(Console.ReadLine());
 
-                //Calculate the are of the Triangle
-                area = (triangleBase * triangleHeight) / 2;
-                Console.WriteLine("Area of triangle is: " + area);
+                    //Calculate the Area to floor 
+                    area = lengthOfRoom * widthOfRoom;
+                    Console.WriteLine("Area of Rectangle is: " + area);
+                }
+                else if (shapeOfRoom == "T")
+                {
+                    //Supply the bas
+                    Console.WriteLine("Enter the base of triangle:");
+                    double triangleBase = Convert.ToDouble(Console.ReadLine());
+
+                    //Supply the height
+                    Console.WriteLine("Enter the height of triangle:");
+                    double triangleHeight = Convert.ToDouble(Console.ReadLine());
+
+                    //Calculate the are of the Triangle
+                    area = (triangleBase * triangleHeight) / 2;
+                    Console.WriteLine("Area of triangle is: " + area);
+                }
+                else
+                {
+                    Console.WriteLine("Shape is invalid");
+                }
             }
-            else
-            {
-                Console.WriteLine("Shape is invalid");
-            }
+
             //Tiles needed 
             double tilesNeeded = (int)Math.Ceiling(area / sizeOfTile); // Rounded up
             Console.WriteLine("The total tiles needed is: " + tilesNeeded + ".");

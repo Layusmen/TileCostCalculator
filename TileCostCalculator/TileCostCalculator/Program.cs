@@ -21,7 +21,7 @@ namespace TileCostCalculator
             double sizeOfTile = Convert.ToDouble(Console.ReadLine());
             double area = 0;
 
-            //Calculating the Area to floor 
+            //Calculate the Area to floor 
             if (shapeOfRoom == "R")
             {
                 //Supply the lenght
@@ -32,7 +32,7 @@ namespace TileCostCalculator
                 Console.WriteLine("Please Supply the flooring width in feet");
                 double widthOfRoom = Convert.ToDouble(Console.ReadLine());
 
-                //Calculating the Area to floor 
+                //Calculate the Area to floor 
                 area = lengthOfRoom * widthOfRoom;
                 Console.WriteLine("Area of Rectangle is: " + area);
             }
@@ -58,7 +58,7 @@ namespace TileCostCalculator
             double tilesNeeded = (int)Math.Ceiling(area / sizeOfTile); // Rounded up
             Console.WriteLine("The total tiles needed is: " + tilesNeeded + ".");
 
-            //Calculating the Total Cost
+            //Calculate the Total Cost
             double total = tilesNeeded * costOfTile;
             Console.WriteLine("The Total Cost is: $" + total + ".");
 

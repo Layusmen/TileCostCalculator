@@ -62,8 +62,8 @@ namespace TileCostCalculator
             double total = tilesNeeded * costOfTile;
             Console.WriteLine("The Total Cost is: $" + total + ".");
 
-            /* since 20 Square Feet is done every hour at the rate of $86/hr. Then:
-            1 Sqaure Feet is done at 86/hr divide 20.*/
+            /* since 20 Square Feet is done every hour at the rate of $86/hr. 
+             * Then: 1 Sqaure Feet is done at 86/hr divide 20.*/
             double squareFeetPerHour = RATEPERHOUR / GIVENFEET;
             double labourCost = area * squareFeetPerHour;
             Console.WriteLine("The labor cost is: $" + labourCost);

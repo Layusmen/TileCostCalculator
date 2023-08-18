@@ -52,7 +52,7 @@ namespace TileCostCalculator
                 }
                 else if (shapeOfRoom == "T")
                 {
-                    //Supply the bas
+                    //Supply the base
                     Console.WriteLine("Enter the base of triangle:");
                     double triangleBase = Convert.ToDouble(Console.ReadLine());
 
@@ -65,23 +65,21 @@ namespace TileCostCalculator
                     Console.WriteLine("Area of triangle is: " + area);
                 }
             }
-            string dot = ".";
-            string stringTotal = "The total";
             string dollar = "$";
 
             //Tiles needed 
             double tilesNeeded = (int)Math.Ceiling(area / sizeOfTile); // Rounded up
-            Console.WriteLine($"{stringTotal} tiles needed is: {tilesNeeded}{dot}");
+            Console.WriteLine($"The total tiles needed is: {tilesNeeded}.");
 
             //Calculate the Total Cost
             double total = tilesNeeded * costOfTile;
-            Console.WriteLine($"{stringTotal} cost is: {dollar}{total}{dot}");
+            Console.WriteLine($"The total cost is: {dollar}{total}.");
 
             /* since 20 Square Feet is done every hour at the rate of $86/hr. 
              Then: 1 Sqaure Feet is done at 86/hr divide 20.*/
             double squareFeetPerHour = RATEPERHOUR / GIVENFEET;
             double labourCost = area * squareFeetPerHour;
-            Console.WriteLine($"The labor cost is: {dollar}{labourCost}{dot}");
+            Console.WriteLine($"The labor cost is: {dollar}{labourCost}");
         }
     }
 }

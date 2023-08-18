@@ -64,15 +64,11 @@ namespace TileCostCalculator
                     area = (triangleBase * triangleHeight) / 2;
                     Console.WriteLine("Area of triangle is: " + area);
                 }
-                else
-                {
-                    Console.WriteLine("Shape is invalid");
-                }
             }
             string dot = ".";
             string stringTotal = "The total";
             string dollar = "$";
-            
+
             //Tiles needed 
             double tilesNeeded = (int)Math.Ceiling(area / sizeOfTile); // Rounded up
             Console.WriteLine($"{stringTotal} tiles needed is: {tilesNeeded}{dot}");
